@@ -251,7 +251,7 @@ h1 {
     height: 30px;
     border-radius: 50%;
     border: 1px solid rgba(0,0,0,0.1);
-    background-color: #fff;
+    background-color: var(--while-color);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
 }
@@ -263,7 +263,7 @@ h1 {
     font-size: 20px;
     line-height: 1.15;
     letter-spacing: 0.03em;
-    color: #000;
+    color: var(--black-color);
 }
 .form {
     display: flex;
@@ -356,7 +356,7 @@ h1 {
     
   }
   .checkbox__icon--second {
-    color: #2196f3;
+    color: var(--pretty-color);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
   .button-submit {
@@ -367,8 +367,8 @@ h1 {
     padding: 0;
     width: 200px;
     height: 50px;
-    background-color: #2196f3;
-    color: #fff;
+    background-color: var(--pretty-color);
+    color: var(--while-color);
     border-radius: 4px;
     border: 0px solid transparent;
     font-weight: 700;
@@ -435,7 +435,7 @@ h1 {
 .section__title {
     margin-top: 0;
     margin-bottom: 50px;
-    color: #212121;
+    color: var(--black-color);
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -477,23 +477,27 @@ position: relative;
 }
 /*section 4*/
 .work-nav {
-    background: #f5f4fa;
+    background: var(--work-color);
 }
 .team__section {
     display: flex;
     justify-content: space-between;
 }
 .team__item {
-    background-color: #fff;
+    background-color: var(--while-color);
     text-align: center;
     
     border-radius: 0px 0px 4px 4px;
+   
+}
+.team__item:hover, .team__item:focus {
     box-shadow: 10px 10px 8px 2px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
 }
 .team__name {
     margin-top: 30px;
     margin-bottom: 10px;
-    color: #212121;
+    color: var(--black-color);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -512,21 +516,21 @@ position: relative;
     align-items: center;
     margin-top: 20px;
     margin-bottom: 30px;
+    fill: var(--client-color);
 }
 .team__text {
     display: flex;
-    justify-content: center;
-    align-items: center;
     width: 44px;
     height: 44px;
-    background-color: #fff;
-    border-radius: 50%;
-    fill: #afb1b8;
-    transition-property: background-color, fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 0;
+    
+    /*outline: 1px solid var(--client-color);*/
+    color: var(--client-color);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
-.team__icon a:focus, .team__icon a:hover {
+.team__text:focus, .team__text:hover {
     background-color: var(--pretty-color);
     border-radius: 50%;
     fill: var(--table-color);
@@ -543,8 +547,8 @@ position: relative;
     justify-content: center;
     width: 170px;
     height: 92px;
-    fill: #afb1b8;
-    border: 1px solid #afb1b8;
+    fill: var(--client-color);
+    border: 1px solid var(--client-color);
     border-radius: 4px;
     transition-property: fill, border;
     transition-duration: 250ms;
@@ -757,7 +761,7 @@ position: relative;
     height: 168px;
     align-items: center;
     margin: 0;
-    color: #fff;
+    color: var(--while-color);
     font-size: 18px;
     line-height: 1.56;
 }
