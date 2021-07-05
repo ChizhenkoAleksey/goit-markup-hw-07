@@ -1,0 +1,62 @@
+.work-nav {
+    background: $work-color;
+}
+.team {
+
+&__section {
+    display: flex;
+    justify-content: space-between;
+}
+&__item {
+    background-color: $while-color;
+    text-align: center;
+    
+    border-radius: 0px 0px 4px 4px;
+   
+}
+&__item:hover, &__item:focus {
+    box-shadow: 10px 10px 8px 2px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+&__name {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: $black-color;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+}
+&__work {
+    font-size: 16px;
+    line-height: 1.19;
+}
+&__icon {
+    display: flex;
+    width: 206px;
+    padding: 0 ;
+    margin: auto;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    fill: $client-color;
+}
+&__text {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    
+    /*outline: 1px solid var(--client-color);*/
+    color: $client-color;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+&__text:focus, &__text:hover {
+    background-color: $pretty-color;
+    border-radius: 50%;
+    fill: $table-color;
+}
+}
