@@ -5,53 +5,76 @@
 
 &__section {
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
+    margin-bottom: 0;
 }
 &__item {
     background-color: $while-color;
-    text-align: center;
-    
-    border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px, 2px
+  rgba(0, 0, 0, 0.2),0px, 1px
+  rgba(0, 0, 0, 0.14),0px, 1px
+  rgba(0, 0, 0, 0.12);
+  border-radius: 1px;
    
 }
 &__item:hover, &__item:focus {
     box-shadow: 10px 10px 8px 2px rgba(0, 0, 0, 0.3);
     cursor: pointer;
 }
+&__list {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
 &__name {
-    margin-top: 30px;
-    margin-bottom: 10px;
+    text-align: center;
     color: $black-color;
-    font-weight: 500;
+    font-family: Roboto;
     font-size: 16px;
-    line-height: 1.19;
+    line-height: 1.142;
+   margin-bottom: 0;
 }
 &__work {
+    margin-top: 10px;
+    text-align: center;
+    color: $active-color;
+    font-family: Roboto;
+    width: auto;
+    font-style: normal;
+    font-weight: 400;
     font-size: 16px;
-    line-height: 1.19;
+    line-height: 1.187;
+    
 }
 &__icon {
     display: flex;
     width: 206px;
-    padding: 0 ;
+    padding: 0 auto;
     margin: auto;
     justify-content: space-between;
     text-align: center;
     align-items: center;
     margin-top: 20px;
-    margin-bottom: 30px;
+}
+&__icon a {
+    display: flex;
+    width: 44px;
+    height: 44px;
     fill: $client-color;
+    align-items: center;
+    justify-content: center;
+    transition-property: background-color, fill;
+    transition: transform 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 &__text {
-    display: flex;
+    display: inline-block;
     width: 44px;
     height: 44px;
     padding: 0;
     
     /*outline: 1px solid var(--client-color);*/
-    color: $client-color;
+    fill: $client-color;
     text-align: center;
-    justify-content: center;
     align-items: center;
 }
 &__text:focus, &__text:hover {

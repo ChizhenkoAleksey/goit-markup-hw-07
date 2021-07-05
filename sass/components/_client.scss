@@ -1,25 +1,34 @@
 .client {
-    display: inline-flex;
-    align-items: center;
+    display: flex;
+    
+
+    &__team {
+        position: relative;
+        display: flex;
+        width: 170px;
+        height: 92px;
+        padding: 0;
+        outline: 1px solid $client-color;
+        fill: $client-color;
+        justify-content:center;
+        text-align: center;
+        align-items: center;
+        border-radius: 2px;
+        transition-property: fill;
+        transition: transform 1000ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
 
 &__icon {
     display: flex;
-    align-items: center;
+    justify-content:center;
     text-align: center;
-    justify-content: center;
-    width: 170px;
-    height: 92px;
-    fill: $client-color;
-    border: 1px solid $client-color;
-    border-radius: 4px;
-    transition-property: fill, border;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
+    width: 106px;
+    height: 60px;}
 
 & li:nth-last-child(1n) {
     margin-right: 30px;}
     
-&__icon:focus, &__icon:hover {
+&__team:focus, &__team:hover {
     fill: $pretty-color;
     outline: 1px solid $pretty-color;  
 }
