@@ -25,8 +25,12 @@
     width: 106px;
     height: 60px;}
 
-& li:nth-last-child(1n) {
+&__item:nth-last-child(1n) {
     margin-right: 30px;}
+    
+&__item:nth-child(6n) {
+        margin-right: 0;
+    }
     
 &__team:focus, &__team:hover {
     fill: $pretty-color;
